@@ -89,7 +89,7 @@ public class BoundMain : MonoBehaviour
                 new_x = Input.mousePosition.x;
                 d = x - new_x;
                 if (d != 0)
-                    gameObject.GetComponent<Transform>().localRotation = Quaternion.Euler(0f, 0f, -((d/1.5f) + old_d)/2f);
+                    gameObject.GetComponent<Transform>().localRotation = Quaternion.Euler(0f, 0f, -((d/1.5f) + old_d)/1.5f);
             }
 
 
