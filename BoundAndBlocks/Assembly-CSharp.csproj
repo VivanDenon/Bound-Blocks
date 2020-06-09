@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\AddBound.cs" />
     <Compile Include="Assets\Scripts\BoundMain.cs" />
     <Compile Include="Assets\Scripts\GameSystems.cs" />
+    <Compile Include="Assets\Scripts\Joysteak.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

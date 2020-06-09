@@ -88,6 +88,7 @@ public class GameSystems : MonoBehaviour
     {
         yield return new WaitForSeconds(0.9f);
         sd.enabled = true;
+        cube.SetActive(true);
         b.enabled = false;
         //yield return new WaitForSeconds(1f);
         game = true;
@@ -101,6 +102,7 @@ public class GameSystems : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    [SerializeField] GameObject cube;
     public void GoPlay()
     {
         if (!lose)
@@ -113,6 +115,7 @@ public class GameSystems : MonoBehaviour
         else
         {
             StartCoroutine(sff());
+            
         }
         return;
     }

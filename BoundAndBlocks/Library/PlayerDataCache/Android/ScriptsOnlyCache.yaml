@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - AddBound
     - BoundMain
     - GameSystems
+    - Joysteak
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
@@ -14,6 +15,14 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -58,27 +67,29 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11184}
+      Script: {instanceID: 11172}
     - Class: 114
-      Script: {instanceID: 11472}
+      Script: {instanceID: 11460}
     - Class: 114
-      Script: {instanceID: 11526}
+      Script: {instanceID: 11514}
     - Class: 114
-      Script: {instanceID: 11596}
+      Script: {instanceID: 11584}
     - Class: 114
-      Script: {instanceID: 12188}
+      Script: {instanceID: 12176}
     - Class: 114
-      Script: {instanceID: 12886}
+      Script: {instanceID: 12874}
     - Class: 114
-      Script: {instanceID: 13108}
+      Script: {instanceID: 13096}
     - Class: 114
-      Script: {instanceID: 13644}
+      Script: {instanceID: 13632}
     - Class: 114
-      Script: {instanceID: 14150}
+      Script: {instanceID: 14138}
     - Class: 114
-      Script: {instanceID: 14154}
+      Script: {instanceID: 14142}
     - Class: 114
-      Script: {instanceID: 14256}
+      Script: {instanceID: 14244}
+    - Class: 114
+      Script: {instanceID: 15550}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -392,7 +403,7 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 1b6076b18e135e15bdc2be06a74973fb
+      Hash: bab027282ec0aa41a822420564ff2568
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameSystems
@@ -594,6 +605,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 6ce71896e63e2f0140059003207131e2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Joysteak
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

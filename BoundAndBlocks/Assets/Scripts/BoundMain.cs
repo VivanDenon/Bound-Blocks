@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,8 +20,7 @@ public class BoundMain : MonoBehaviour
     [SerializeField] Rigidbody2D phis;
 
     public AddBound[] ass;
-
-    [SerializeField] GameSystems sys;
+    public GameSystems sys;
 
     public void SetParents()
     {
@@ -70,13 +70,20 @@ public class BoundMain : MonoBehaviour
 
     void Update()
     {
-
+        /*if (is_started && !sys.lose)
+        {
+            if (joysteak.block)
+            {
+                gameObject.GetComponent<Transform>().localRotation = Quaternion.Euler(0f, 0f, (float)Math.Sqrt((Math.Pow(joysteak.x_rotation, 2) + (Math.Pow(joysteak.y_rotation, 2)))));
+            }
+        }*/
         if (!Stop)
         {
             gameObject.transform.position = new Vector3(500, y_pos, 0);
             y_pos -= 800 * Time.deltaTime;
         }
 
+        /*
         if (is_started && !sys.lose)
         {
             if (Input.GetMouseButtonDown(0))
@@ -100,7 +107,7 @@ public class BoundMain : MonoBehaviour
                 old_d = gameObject.GetComponent<Transform>().localRotation.z;
                 d = 0;
             }
-        }
+        }*/
     }
 
     public void Add_Bound(Transform axx)
